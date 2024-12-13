@@ -39,7 +39,7 @@ const App = () => {
             <h1>ELİF </h1>
             <i className="fas fa-heart"></i>
             <h1>METEHAN</h1>
-            <p>Sevgililer günümüz kutlu olsun sevgilim</p>
+            <p>Sevgililer Günümüz Kutlu Olsun Sevgilim</p>
           </div>
         </div>
       </header>
