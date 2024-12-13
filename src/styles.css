@@ -301,3 +301,118 @@ body {
   object-fit: cover;
   border-radius: 10px;
 }
+
+.footer {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.footer-image {
+  position: relative;
+}
+
+.footer-image img {
+  width: 100%;
+  height: auto;
+  filter: brightness(30%); /* Fotoğrafı daha da soluklaştır */
+}
+
+.footer-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px;
+  max-width: 80%;
+}
+
+.footer-text {
+  font-size: 2.5rem; /* Yazıyı biraz daha büyüt */
+  font-weight: bold; /* Yazıyı kalın yap */
+}
+
+.footer-subtext {
+  font-size: 1.2rem;
+  font-weight: bold; /* Alt yazıyı kalınlaştır */
+  font-style: italic;
+}
+
+.footer i {
+  color: red; /* Kalp simgesini kırmızı yap */
+  margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+  .footer-text {
+    font-size: 2rem; /* Mobilde yazıyı biraz küçült */
+  }
+
+  .footer-subtext {
+    font-size: 1rem;
+  }
+
+  .footer-overlay {
+    max-width: 90%;
+  }
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.header-image {
+  position: relative;
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+  filter: brightness(40%); /* Fotoğrafı soluklaştır */
+}
+
+.header-overlay {
+  position: absolute;
+  top: 70%; /* Yazıyı daha aşağıya al */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 3rem; /* Yazıyı büyük yapmak */
+  font-weight: bold; /* Yazıyı kalın yap */
+  margin: 0;
+}
+
+.header p {
+  font-size: 1.5rem; /* Alt yazıyı biraz küçült */
+  font-weight: bold; /* Yazıyı kalın yap */
+  margin-top: 10px;
+}
+
+.header i {
+  color: red; /* Kalp simgesini kırmızı yap */
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem; /* Mobilde yazıyı küçült */
+  }
+
+  .header p {
+    font-size: 1.2rem; /* Mobilde alt yazıyı küçült */
+  }
+
+  .header-overlay {
+    padding: 15px;
+    max-width: 90%;
+  }
+}

@@ -33,10 +33,16 @@ const App = () => {
   return (
     <div className="app">
       <header className="header">
-        <h1>ELİF & METEHAN</h1>
-        <p>Sevgililer günümüz kutlu olsun sevgilim</p>
+        <div className="header-image">
+          <img src="/images/8.jpeg" alt="Header image" />
+          <div className="header-overlay">
+            <h1>
+              ELİF <i className="fas fa-heart"></i> METEHAN
+            </h1>
+            <p>Sevgililer günümüz kutlu olsun sevgilim</p>
+          </div>
+        </div>
       </header>
-
       <main className="main-content">
         <section className="hero-image">
           <img src="/images/3.jpeg" alt="Elif ve Metehan" />
@@ -103,8 +109,18 @@ const App = () => {
       </main>
 
       <footer className="footer">
-        <p className="footer-title">Elif & Metehan</p>
-        <p className="footer-subtitle">Sonsuza kadar...</p>
+        <div className="footer-image">
+          <img src="/images/13.jpg" alt="Footer image" />
+          <div className="footer-overlay">
+            <p className="footer-text">
+              METEHAN <i className="fas fa-heart"></i> ELİF
+            </p>
+            <p className="footer-subtext">
+              BU WEBSİTESİ UMAY DİGİTAL TARAFINDAN METEHAN BEYE ÖZEL
+              HAZIRLANMIŞTIR
+            </p>
+          </div>
+        </div>
       </footer>
     </div>
   );
