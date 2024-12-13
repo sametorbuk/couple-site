@@ -90,7 +90,7 @@ const App = () => {
         </div>
 
         <section className="music-player">
-          <h2>Aşk Şarkımız</h2>
+          <h2>ŞARKIMIZ</h2>
           <div className="video-wrapper">
             <iframe
               width="560"
