@@ -95,12 +95,31 @@ const App = () => {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/-dUmZjyftwA"
+              src="https://www.youtube.com/embed/4-vPgQjy1q8"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
+          </div>
+
+          <div
+            style={{
+              textAlign: "center",
+              fontSize: "1.5rem",
+              fontWeight: "bold",
+              marginTop: "20px",
+              color: "white",
+              fontStyle: "italic",
+            }}
+          >
+            <p style={{ color: "black" }}>
+              Seni Üzerlerse Haber Ver bana
+              <br />
+              Ben Senin Kapında Nöbet Beklerim
+              <br />
+              Çünkü Ben Severken Çocuk Gibiyim
+            </p>
           </div>
         </section>
 
