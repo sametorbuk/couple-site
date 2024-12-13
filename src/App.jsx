@@ -119,7 +119,7 @@ const App = () => {
               <span className="name">ELİF</span>
             </div>
             <p className="footer-subtext">
-              BU WEBSİTESİ UMAY DİGİTAL TARAFINDAN METEHAN BEYE ÖZEL
+              BU WEBSİTESİ METEHAN BEY TARAFINDAN ELİF HANIM'A ÖZEL
               HAZIRLANMIŞTIR
             </p>
           </div>
