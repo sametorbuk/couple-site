@@ -306,7 +306,7 @@ body {
   position: relative;
   text-align: center;
   color: white;
-  padding: 20px;
+  padding: 0px;
 }
 
 .footer-image {
@@ -347,7 +347,7 @@ body {
 
 @media (max-width: 768px) {
   .footer-text {
-    font-size: 2rem; /* Mobilde yazıyı biraz küçült */
+    font-size: 1.6rem; /* Mobilde yazıyı biraz küçült */
   }
 
   .footer-subtext {
