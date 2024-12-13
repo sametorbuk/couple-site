@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reset ve genel stiller */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff5f5;
+  color: #333;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background-color: #ff4d4d;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.25rem;
+}
+
+/* Main content */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero image */
+.hero-image {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Countdown */
+.countdown {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.countdown h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.timer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timer-box {
+  flex: 1 1 100px;
+  max-width: 150px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.timer-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff4d4d;
+}
+
+.timer-label {
+  color: #666;
+}
+
+/* Photo Gallery */
+.photo-gallery {
+  margin-bottom: 3rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.main-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quote-container {
+  grid-column: 1 / -1;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Love Quotes */
+.love-quotes {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.love-quotes h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main-quote {
+  font-style: italic;
+  font-size: 1.25rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .quote-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.quote-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Music Player */
+.music-player {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.music-player h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(to right, #2d3436, #636e72);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-subtitle {
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+/* Responsive tasarım için ek medya sorguları */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .header p {
+    font-size: 16px;
+  }
+
+  .timer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-quote {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  .timer-container {
+    grid-template-columns: 1fr;
+  }
+  .timer-box {
+    flex-basis: calc(50% - 10px);
+  }
+
+  .main-quote {
+    font-size: 16px;
+  }
+
+  .quote-box p {
+    font-size: 14px;
+  }
+}
+
+.full-width-image {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.full-width-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
