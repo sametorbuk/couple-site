@@ -113,7 +113,9 @@ const App = () => {
           <img src="/images/13.jpg" alt="Footer image" />
           <div className="footer-overlay">
             <p className="footer-text">
-              METEHAN <i className="fas fa-heart"></i> ELİF
+              <span className="name">METEHAN</span>{" "}
+              <i className="fas fa-heart"></i>{" "}
+              <span className="name">ELİF</span>
             </p>
             <p className="footer-subtext">
               BU WEBSİTESİ UMAY DİGİTAL TARAFINDAN METEHAN BEYE ÖZEL
