@@ -227,25 +227,6 @@ body {
   height: 100%;
 }
 
-/* Footer */
-.footer {
-  background: linear-gradient(to right, #2d3436, #636e72);
-  color: white;
-  text-align: center;
-  padding: 2rem 0;
-  margin-top: auto;
-}
-
-.footer-title {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.footer-subtitle {
-  font-size: 0.875rem;
-  opacity: 0.8;
-}
-
 /* Responsive tasarım için ek medya sorguları */
 @media (max-width: 768px) {
   .header h1 {
@@ -302,63 +283,6 @@ body {
   border-radius: 10px;
 }
 
-.footer {
-  position: relative;
-  text-align: center;
-  color: white;
-  padding: 0px;
-}
-
-.footer-image {
-  position: relative;
-}
-
-.footer-image img {
-  width: 100%;
-  height: auto;
-  filter: brightness(30%); /* Fotoğrafı daha da soluklaştır */
-}
-
-.footer-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 10px;
-  max-width: 80%;
-}
-
-.footer-text {
-  font-size: 2.5rem; /* Yazıyı biraz daha büyüt */
-  font-weight: bold; /* Yazıyı kalın yap */
-}
-
-.footer-subtext {
-  font-size: 1.2rem;
-  font-weight: bold; /* Alt yazıyı kalınlaştır */
-  font-style: italic;
-}
-
-.footer i {
-  color: red; /* Kalp simgesini kırmızı yap */
-  margin: 0 5px;
-}
-
-@media (max-width: 768px) {
-  .footer-text {
-    font-size: 1.6rem; /* Mobilde yazıyı biraz küçült */
-  }
-
-  .footer-subtext {
-    font-size: 1rem;
-  }
-
-  .footer-overlay {
-    max-width: 90%;
-  }
-}
-
 .header {
   position: relative;
   text-align: center;
@@ -404,7 +328,7 @@ body {
 
 @media (max-width: 768px) {
   .header h1 {
-    font-size: 2.5rem; /* Mobilde yazıyı küçült */
+    font-size: 2rem; /* Mobilde yazıyı küçült */
   }
 
   .header p {
@@ -415,4 +339,78 @@ body {
     padding: 15px;
     max-width: 90%;
   }
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  /* Footer div'inin yüksekliğini tam sayfa yap */
+  overflow: hidden; /* Fotoğraf dışına taşmasın diye */
+}
+
+.footer-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/13.jpg"); /* Fotoğrafı arka plana ekle */
+  background-size: cover; /* Fotoğrafın div'i tamamen kaplamasını sağlar */
+  background-position: center; /* Fotoğrafın ortalanmasını sağlar */
+  background-repeat: no-repeat; /* Fotoğrafın tekrarlanmamasını sağlar */
+  filter: brightness(20%); /* Fotoğrafı soluklaştır */
+  z-index: -1; /* Fotoğrafın yazıların altında görünmesini sağlar */
+}
+
+.footer-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  z-index: 1; /* Yazıların fotoğrafın üstünde görünmesi için */
+}
+
+.footer-text {
+  font-size: 2.5rem; /* Yazı boyutunu ayarla */
+  font-weight: bold; /* Yazıyı kalın yap */
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Yazıları dikey hizalamak */
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .name {
+  margin: 5px 0; /* Yazılar arasındaki boşluğu ayarla */
+}
+
+.footer i {
+  color: red; /* Kalp simgesini kırmızı yap */
+  font-size: 2rem; /* Kalp boyutunu ayarla */
+  margin: 10px 0; /* Kalp ile yazılar arasındaki boşluğu ayarla */
+}
+
+.footer-subtext {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 10px;
+  z-index: 1; /* Yazının üstte görünmesini sağlamak için */
+}
+
+@media (max-width: 768px) {
+  .footer-text {
+    font-size: 2rem; /* Mobilde yazıyı küçült */
+  }
+
+  .footer-subtext {
+    font-size: 1rem; /* Mobilde alt yazıyı küçült */
+  }
+}
+
+.imege {
+  filter: brightness(30%);
 }

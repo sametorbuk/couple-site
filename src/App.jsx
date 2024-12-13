@@ -36,13 +36,14 @@ const App = () => {
         <div className="header-image">
           <img src="/images/8.jpeg" alt="Header image" />
           <div className="header-overlay">
-            <h1>
-              ELİF <i className="fas fa-heart"></i> METEHAN
-            </h1>
+            <h1>ELİF </h1>
+            <i className="fas fa-heart"></i>
+            <h1>METEHAN</h1>
             <p>Sevgililer günümüz kutlu olsun sevgilim</p>
           </div>
         </div>
       </header>
+
       <main className="main-content">
         <section className="hero-image">
           <img src="/images/3.jpeg" alt="Elif ve Metehan" />
@@ -110,13 +111,13 @@ const App = () => {
 
       <footer className="footer">
         <div className="footer-image">
-          <img src="/images/13.jpg" alt="Footer image" />
+          <img className="imege" src="/images/13.jpg" alt="Footer image" />
           <div className="footer-overlay">
-            <p className="footer-text">
-              <span className="name">METEHAN</span>{" "}
-              <i className="fas fa-heart"></i>{" "}
+            <div className="footer-text">
+              <span className="name">METEHAN</span>
+              <i className="fas fa-heart"></i>
               <span className="name">ELİF</span>
-            </p>
+            </div>
             <p className="footer-subtext">
               BU WEBSİTESİ UMAY DİGİTAL TARAFINDAN METEHAN BEYE ÖZEL
               HAZIRLANMIŞTIR
